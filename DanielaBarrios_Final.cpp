@@ -12,14 +12,13 @@ int main(){
    
     return 0; 
 }
-void leapfrog (float t0, float tf, float dt, float omega, string datos){
+void leapfrog (float t0, float tf, float dt, float m, float q, string datos){
 
   float t0=0.0;
   float x=1.0;
   float y=0.0;
   float tf=10.0;
   float dt=0.1;
-  float omega = 1.0;
   float x0= 1.0;
   float y0 = 0.0;
     
@@ -39,8 +38,8 @@ void leapfrog (float t0, float tf, float dt, float omega, string datos){
   while(t0<tf){ 
       
     outfile << t0 << " " << x << " " << y << endl;
-    x = x + 0.5 * dt * y;
-    y  = y + dt * (-omega * omega * x);
+    x = m + 0.5 * dt * q;
+    y  = q + dt * (-q * dt * m);
     t0 = t0 + dt;
       
      
