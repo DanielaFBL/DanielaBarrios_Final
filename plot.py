@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-datos = np.loadtxt("campo.dat")
+datos = np.loadtxt("datos.dat")
 
 plt.figure(figsize=(10,10))
 
