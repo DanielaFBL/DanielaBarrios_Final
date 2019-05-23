@@ -1,4 +1,4 @@
-plot.png:leapfrog.dat plot.py
+plot.png:datos.dat plot.py
   python plot.py
 
 %.dat : a.out
@@ -9,4 +9,4 @@ a.out: DanielaBarrios_Final.cpp
   
   
 clean:
-	rm -rf a.out leapfrog.dat *.png *~
+	rm -rf a.out datos.dat *.png *~
